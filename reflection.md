@@ -24,7 +24,7 @@ Vilka av I, N, V, E, S, T uppfyller storyn och varför?
 - linear history
 - göra pull request utan problem
 - reviewa pull requesten på klasskamraterna med förbättringar
-- ta emot förbättringsförslagen och implementera de så mycket som möjligt
+- implementera förbättringsförslagen i mina commits
 
 
 **DoD (checklista):**
