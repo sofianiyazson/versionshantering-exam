@@ -18,6 +18,13 @@ form.addEventListener('submit', e => {
   render();
 });
 
+// Remove bookmark
+function removeBookmark(index) {
+  bookmarks.splice(index, 1);
+  localStorage.setItem('bookmarks', JSON.stringify(bookmarks));
+  render();
+}
+
 // Show bookmarks list
     function render() {
       list.innerHTML = '';
