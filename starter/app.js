@@ -44,6 +44,7 @@ function removeBookmark(index) {
       letterHeader.textContent = currentLetter;
       letterHeader.classList.add('letter-header');
       list.appendChild(letterHeader);
+
     }
 
     // Add bookmark item with URL shown under title
