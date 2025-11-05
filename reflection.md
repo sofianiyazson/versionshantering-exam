@@ -18,7 +18,13 @@ Vilka av I, N, V, E, S, T uppfyller storyn och varför?
 - **T**estable: Ja, den kan testas innan och säkerställa att kvaliten och kravet uppfylls.
 
 ## 2) Sprintmål + Definition of Done (DoD)
-**Sprintmål:** 
+**Sprintmål:** Sprintmålen som jag har är att kunna leverera alla kraven såsom:
+- Merga utan problem
+- varje feature landar som 1 commit
+- linear history
+- göra pull request utan problem
+- reviewa pull requesten på klasskamraterna med förbättringar
+- ta emot förbättringsförslagen och implementera de så mycket som möjligt
 
 
 **DoD (checklista):**
