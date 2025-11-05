@@ -1,22 +1,24 @@
 const form = document.getElementById('bookmarkForm');
 const list = document.getElementById('bookmarkList');
-let bookmarks = [];
+let bookmarks = JSON.parse(localStorage.getItem('bookmarks')) || [];
 
-// Visa alla bokmärken vid start
+// show bookmarks from localStorage
     render();
 
-// lägga till ett bokmärke
+// Add bookmark
 form.addEventListener('submit', e => {
-  e.preventDefault();
+  e.preventDefault(); // stop the form from submitting
   const title = document.getElementById('title').value.trim();
   const url = document.getElementById('url').value.trim();
   if (!title || !url) return;
+  
   bookmarks.push({ title, url });
+  localStorage.setItem('bookmarks', JSON.stringify(bookmarks));
   form.reset();
   render();
 });
 
-// Visa listan
+// Show bookmarks list
     function render() {
       list.innerHTML = '';
       bookmarks.forEach((bm, i) => {
