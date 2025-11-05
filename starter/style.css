@@ -56,16 +56,6 @@ body {
       box-shadow: inset 200px 0 0 0 #94dbf5;
       color: rgb(32, 30, 30);
     }
-    a:hover { 
-        box-shadow: inset 100px 0 0 0 #1ebdf7;
-  color: white;
-    }
-    
-    .letter-header {
-  font-weight: bold;
-  margin-top: 10px;
-  border-bottom: 1px solid #ccc;
-}
 
     .delete {
       background: crimson;
