@@ -28,7 +28,23 @@ function removeBookmark(index) {
 // Show bookmarks list
     function render() {
       list.innerHTML = '';
+
+      // Sort bookmarks alphabetically by title
+      bookmarks.sort((a, b) => a.title.localeCompare(b.title));
+
+      let currentLetter = '';
+
       bookmarks.forEach((bm, i) => {
+        const firstLetter = bm.title[0].toUpperCase();
+        // Add letter header if it's a new letter
+        if (firstLetter !== currentLetter) {
+          currentLetter = firstLetter;
+          const letterHeader = document.createElement('li');
+          letterHeader.textContent = currentLetter;
+          letterHeader.classList.add('letter-header');
+          list.appendChild(letterHeader);
+        }
+        // Add bookmark item
         const li = document.createElement('li');
         li.innerHTML = `
           <a href="${bm.url}" target="_blank">${bm.title}</a>

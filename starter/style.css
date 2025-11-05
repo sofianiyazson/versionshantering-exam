@@ -50,3 +50,9 @@ body {
         box-shadow: inset 100px 0 0 0 #1ebdf7;
   color: white;
     }
+    
+    .letter-header {
+  font-weight: bold;
+  margin-top: 10px;
+  border-bottom: 1px solid #ccc;
+}
