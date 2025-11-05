@@ -5,6 +5,7 @@ body {
       max-width: 600px;
       margin: auto;
     }
+    
     h1 { text-align: center; }
     form {
       display: flex;
@@ -16,10 +17,12 @@ body {
       box-shadow: 0 2px 5px rgba(0,0,0,0.1);
       margin-bottom: 1rem;
     }
+
     input {
       padding: 0.5rem;
       font-size: 1rem;
     }
+
     button {
       background: #0078d7;
       color: white;
@@ -27,7 +30,9 @@ body {
       padding: 0.5rem 1rem;
       border-radius: 8px;
       cursor: pointer;
+      font-weight: bold;
     }
+
     button:hover { background: #005fa3; }
     ul { list-style: none; padding: 0; }
     li {
@@ -40,11 +45,16 @@ body {
       align-items: center;
       box-shadow: 0 1px 3px rgba(0,0,0,0.1);
     }
-    a {
+
+      a {
       text-decoration: none;
       color: #0078d7;
-      font-weight: bold;
-       transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+      transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+      }
+
+      a:hover { 
+      box-shadow: inset 200px 0 0 0 #94dbf5;
+      color: rgb(32, 30, 30);
     }
     a:hover { 
         box-shadow: inset 100px 0 0 0 #1ebdf7;
@@ -56,3 +66,30 @@ body {
   margin-top: 10px;
   border-bottom: 1px solid #ccc;
 }
+
+    .delete {
+      background: crimson;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      padding: 0.3rem 0.6rem;
+      cursor: pointer;
+    }
+
+    .bookmark-info {
+      display: flex;
+      flex-direction: column; /* titel över URL */
+}
+
+    .bookmark-title {
+      font-weight: bold;
+      margin-bottom: 0.2rem; /* lite avstånd mellan titel och URL */
+      font-size: 1.1rem;
+}
+    .letter-header {
+      font-size: 1.5rem;
+      margin-top: 1.5rem;
+      margin-bottom: 0.5rem;
+      border-bottom: 2px solid #0078d7;
+      padding-bottom: 0.2rem;
+    }

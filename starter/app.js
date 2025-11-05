@@ -27,6 +27,7 @@ function removeBookmark(index) {
 
 // Show bookmarks list
     function render() {
+<<<<<<< HEAD
       list.innerHTML = '';
 
       // Sort bookmarks alphabetically by title
@@ -52,4 +53,36 @@ function removeBookmark(index) {
         `;
         list.appendChild(li);
       });
+=======
+  list.innerHTML = '';
+
+  // Sort bookmarks alphabetically by title
+  bookmarks.sort((a, b) => a.title.localeCompare(b.title));
+
+  let currentLetter = '';
+
+  bookmarks.forEach((bm, i) => {
+    const firstLetter = bm.title[0].toUpperCase();
+
+    // Add letter header if it's a new letter
+    if (firstLetter !== currentLetter) {
+      currentLetter = firstLetter;
+      const letterHeader = document.createElement('li');
+      letterHeader.textContent = currentLetter;
+      letterHeader.classList.add('letter-header');
+      list.appendChild(letterHeader);
+>>>>>>> f6e6719 (added so the user can see the link input and css style)
     }
+
+    // Add bookmark item with URL shown under title
+   const li = document.createElement('li');
+    li.innerHTML = `
+  <div class="bookmark-info">
+    <div class="bookmark-title">${bm.title}</div>
+    <div class="bookmark-url"><a href="${bm.url}" target="_blank">${bm.url}</a></div>
+  </div>
+  <button class="delete" onclick="removeBookmark(${i})">Ta bort</button>
+`;
+list.appendChild(li);       
+} );
+}
