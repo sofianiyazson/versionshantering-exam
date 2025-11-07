@@ -21,8 +21,8 @@ Projektet är byggt med **HTML, CSS och JavaScript** och syftet är att träna p
 ## 🎯 Syfte
 Att träna på Scrum och Versionshantering med Git samtidigt och förstår hur man använder **Trello**korten. Hur man skapar **PR**, AC, DoD och även UserStories. Reviewa andras PullRequest och ge förslag på förbättring på dessa.
 
-## 🗂️ Trellokort
-👉 [📑 Trello-kort](https://trello.com/b/lMLk8cHJ/versionshantering-examination)
+## 🗂️ Trello-bräda
+👉 [📑 Trello-bräda](https://trello.com/b/lMLk8cHJ/versionshantering-examination)
 
 
 ## ↗️💭 Hänvisningar (VG)
