@@ -42,7 +42,7 @@ Sprintmålen som jag har är att kunna leverera alla **kraven** såsom:
 2. Inte tycka det är pinsamt och ge feedback. 
 3. Börja med projekt i tid. 
 4. Skriv **git pull** mycket oftare, inte glömma det
-5. Skriv US i varje PR så att det är lätt att följa vilken PR tillhör vilket Trello
+5. Skriv US i varje PR så att det är lätt att följa vilken PR tillhör vilket Trello.
 
 - **Stop:** (ex. stora PR över 300 rader…)
 1. Inte samla ihop 2 PRs bara för att jag inte orkar vänta på någon ska reviewa min PR. 
